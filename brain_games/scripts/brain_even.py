@@ -19,9 +19,8 @@ def brain_even():
         correct_answer = 'yes' if is_even(number) else 'no'
         if user_answer.lower() != correct_answer:
             print(
-                f'\'{user_answer}\' is wrong ' +
-                f'answer ;(. Correct answer was \'{correct_answer}\''
-                )
+                f'\'{user_answer}\' is wrong ',
+                f'answer ;(. Correct answer was \'{correct_answer}\'')
             print(f'Let\'s try again, {name}!')
             return
         print('Correct!')
