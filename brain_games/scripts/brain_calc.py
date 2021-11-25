@@ -5,13 +5,15 @@ from brain_games.cli import welcome_user
 
 operations = ['+', '-', '*']
 
+
 def calculate_result(first, second, operator):
     if operator == '+':
-         return first + second
+        return first + second
     elif operator == '-':
         return first - second
     else:
         return first * second
+
 
 def brain_calc():
     name = welcome_user()
