@@ -11,7 +11,7 @@ def game_engine(rules, game_data):
         (question, correct_answer) = game_data()
         print(f'Question: {question}')
         user_answer = prompt.string('Answer: ')
-        if user_answer != correct_answer:
+        if user_answer != str(correct_answer):
             print(
                 f'\'{user_answer}\' is wrong ',
                 f'answer ;(. Correct answer was \'{correct_answer}\'')
