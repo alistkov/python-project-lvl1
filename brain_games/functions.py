@@ -24,3 +24,10 @@ def create_sequence(start, step):
     numbers[random_index] = ".."
     sequence = ' '.join(str(num) for num in numbers)
     return (sequence, random_elem)
+
+
+def is_prime(num):
+    for n in range(2,int(num**0.5)+1):
+        if num%n==0:
+            return False
+    return True
