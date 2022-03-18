@@ -11,4 +11,3 @@ def game():
     question = f'Question: {first} {second}'
     correct_answer = math.gcd(first, second)
     return (question, correct_answer)
-
