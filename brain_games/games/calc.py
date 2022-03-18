@@ -9,6 +9,6 @@ def game():
     first = randint(1, 10)
     second = randint(1, 10)
     operator = choice(operations)
-    question = f'Question: {first} {operator} {second}'
+    question = f'{first} {operator} {second}'
     correct_answer = calculate_result(first, second, operator)
     return (question, correct_answer)

@@ -8,6 +8,5 @@ rules = 'What number is missing in the progression?'
 def game():
     start_elem = randint(2, 10)
     step = randint(1, 9)
-    (sequence, correct_answer) = create_sequence(start_elem, step)
-    question = f'Question {sequence}'
+    (question, correct_answer) = create_sequence(start_elem, step)
     return (question, correct_answer)
